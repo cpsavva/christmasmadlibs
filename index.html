@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<link rel="stylesheet" type="text/css" href="style.css">
     <title>Christmas Mad Libs</title>
   </head>
   <body>
   	<div>
   		<form>
   			<div class="form-group">
-			    <label for="example">Please give me an</label>
-			    <input type="text" class="form-control preview" id="example" data-copy="#word" placeholder="give me an adjective">
+			    <label for="example">Please give me a Noun</label>
+			    <input type="text" class="form-control preview col-md-4" data-grammar="noun" id="example" data-copy="#word" placeholder="give me an noun">
+			    			    <label for="example">Please give me an Adjective</label>
+			    <input type="text" class="form-control col-md-4" data-grammar="adjective" id="example" placeholder="give me an adjective">
+			   	<label for="example">Please give me a Verb</label>
+			    <input type="text" class="form-control col-md-4" data-grammar="verb" id="example" placeholder="give me an verb">
+			    			    <label for="example">Please give me an Adverb</label>
+			    <input type="text" class="form-control col-md-4" id="example" data-grammar="adverb" placeholder="give me an adverb">
 			    <!-- <input class="btn btn-primary" type="submit" value="Submit"> -->
 			    <input class="lalalu btn btn-primary" value="lalalu">
 			</div>
@@ -22,12 +28,12 @@
   	<div>
 	    <h1>Twas the Night before Christmas</h1>
 		<!-- <button class="lalalu">lalalu</button> -->
-	    <p id="word"></p>
+	    <!-- <p id="word"></p> -->
 	    <pre>
 	    	'Twas the night before Christmas, when all through the house
 			Not a creature was stirring, not even a mouse;
 			The stockings were hung by the chimney with care,
-			In hopes that St. Nicholas soon would be there;
+			In hopes that <!-- St. Nicholas --> <div id="word"></div> soon would be there;
 
 			The children were nestled all snug in their beds,
 			While visions of sugar-plums danced in their heads;
