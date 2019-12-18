@@ -1,10 +1,11 @@
+function takeWord() {
+		console.log("did this work right?");
+		$("#word").html($(".preview").val())
+	};
+
 function displayWord() {
-		$(".submit").click(function() {
-    	$($(this).data('copy')).html($(this).val());
-  	});
-	// $(".preview").on('keydown', function() {
- //    	$($(this).data('copy')).html($(this).val());
- //  	});
+
+	$(".lalalu").click(function(){takeWord()})
 };
 
 
@@ -12,5 +13,5 @@ function displayWord() {
 
 
 $(document).ready(
-
-	displayWord());
+	displayWord()
+	);
