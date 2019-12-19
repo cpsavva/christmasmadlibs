@@ -11,27 +11,32 @@ function extractDataAttr(){
 
 //function to place the inputs in their prospective places throughout the Mad Lib
 function arrangeWord() {
-	// console.log("arrangWord function")
-	// console.log("this is the array " + grammarArr)
 	$.each(grammarArr, function(index, val){
 		$("#"+val).html('<span class="spanbox">' + $("input[data-grammar="+ val+ "]").val() + '</span>')
 	})
 	grammarArr = [];
-
 	console.log(grammarArr);
 };
 
-
-
+//function to do the above actions and clear input fields and arrays.
 function displayWord() {
-	$(".submit").click(function(){
 		extractDataAttr();
 		arrangeWord();
-			$(':input').val('');
-	}); 
+		$(":input").val('');
+		$(".madlib").hide();
+		$(".poem").show();
 };
+function restart(){
+	$(".startAgain").click(function(){
+		$(".poem").hide();
+		$(".madlib").show();
+	})
+}
 
 
 $(document).ready(
+	$(".poem").hide())
+	$(".finish").click(function(){
 	displayWord()
-	);
+	restart()
+});
