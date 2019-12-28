@@ -38,11 +38,15 @@ function restart(){
 		$(".poem").hide();
 		$(".madLib").show();
 	})
-}
+};
 
 
 //function to slide show the form?
-
+function slideShowForm(){
+	$.each(wordArr, function(index, val){
+		
+	})
+};
 $(document).ready(
 	$(".poem").hide())
 	extractDataAttr();

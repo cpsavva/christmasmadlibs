@@ -8,8 +8,9 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Christmas Mad Libs</title>
 	</head>
-	<body>
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	<body style="background-color: purple">
+		<div class="col-md-4"></div>
+		<div id="wordSlide" class="carousel slide col-md-5" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="request" data-word="word1">
@@ -29,6 +30,7 @@
 						<input type="text" class="form-control col-md-4" data-grammar="verb" placeholder="give me an verb">
 					</div>
 				</div>
+			<!-- </div> -->
 				<div class="carousel-item">
 					<div class="request" data-word="word4">
 						<label for="example">Please give me an Adverb</label>
@@ -38,12 +40,8 @@
 				</div>
 				
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="btn-primary" href="#carouselExampleControls" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<a class="btn-primary" href="#wordSlide" role="button" data-slide="next">
+				<span class="btn btn-primary" aria-hidden="true">Next</span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
